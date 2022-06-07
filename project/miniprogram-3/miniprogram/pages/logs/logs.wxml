@@ -1,0 +1,179 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">登录时间:{{log.date}}</text>
+  </block>
+</view>
+<!--搜索框-->
+<view>
+  <view class="top">
+    <view class="search">
+      <view class="search_in">
+        <image src="http://miniprogram/pages/images/search.png"></image>
+        <input type="text" placeholder="查看更多口罩请点击这里"/>
+        <view class="search_btn">搜索</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--轮播图-->
+<swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+</swiper>
+<!--商品展示-->
+<div class="content">
+  <div class="proRow">
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good11.jpg"></image></div>
+        <div class="proText">
+          <h5>白色小熊口罩</h5>
+          <p class="proPrice">￥ <span>1.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>立即购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good12.jpg"></image></div>
+        <div class="proText">
+          <h5>经典黑色口罩</h5>
+          <p class="proPrice">￥ <span>1.00</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good4.jpg"></image></div>
+        <div class="proText">
+          <h5>克莱因蓝系列-开心一笑</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good5.jpg"></image></div>
+        <div class="proText">
+          <h5>克莱因蓝系列-渐变蓝色</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good6.jpg"></image></div>
+        <div class="proText">
+          <h5>克莱因蓝系列-玉桂狗</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good7.jpg"></image></div>
+        <div class="proText">
+          <h5>克莱因蓝系列-保持可爱</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good8.jpg"></image></div>
+        <div class="proText">
+          <h5>克莱因蓝系列-花儿朵朵</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="proBig">
+      <div class="pro">
+        <div class="proImg"><image width="235" src="/miniprogram/pages/images/good9.jpg"></image></div>
+        <div class="proText">
+          <h5>KN95系列经典白色</h5>
+          <p class="proPrice">￥ <span>3.50</span></p>
+        </div>
+      </div>
+      <a href="#">
+      <div class="proBtn">
+        <div class="btn">
+          <p>购买</p>
+        </div>
+        <div class="btn">
+          <p>加入购物车</p>
+        </div>
+      </div>
+      </a> </div>
+  </div>
+</div>
+
+
